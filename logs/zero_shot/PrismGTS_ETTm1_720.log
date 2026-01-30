@@ -1,0 +1,31 @@
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTm1_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 75607
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (590, 128, 720, 1) (590, 128, 720, 1)
+test shape: (75520, 720, 1) (75520, 720, 1)
+mse:0.5511833896636963, mae:0.4946618974208832

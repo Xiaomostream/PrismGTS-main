@@ -1,0 +1,168 @@
+Dataset: ETTh1 | Task: zero-shot | PredLen: 96
+Model: PrismGTS | ModelID: 3_3_128_ETTh1_512_96
+Setting: 3_3_128_ETTh1_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.383661 | MAE: 0.405796
+
+Dataset: ETTh1 | Task: zero-shot | PredLen: 192
+Model: PrismGTS | ModelID: 3_3_128_ETTh1_512_192
+Setting: 3_3_128_ETTh1_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.405912 | MAE: 0.421097
+
+Dataset: ETTh1 | Task: zero-shot | PredLen: 336
+Model: PrismGTS | ModelID: 3_3_128_ETTh1_512_336
+Setting: 3_3_128_ETTh1_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.415752 | MAE: 0.428977
+
+Dataset: ETTh1 | Task: zero-shot | PredLen: 720
+Model: PrismGTS | ModelID: 3_3_128_ETTh1_512_720
+Setting: 3_3_128_ETTh1_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.435353 | MAE: 0.452937
+
+Dataset: ETTh2 | Task: zero-shot | PredLen: 96
+Model: PrismGTS | ModelID: 3_3_128_ETTh2_512_96
+Setting: 3_3_128_ETTh2_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.303321 | MAE: 0.354767
+
+Dataset: ETTh2 | Task: zero-shot | PredLen: 192
+Model: PrismGTS | ModelID: 3_3_128_ETTh2_512_192
+Setting: 3_3_128_ETTh2_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.358304 | MAE: 0.393888
+
+Dataset: ETTh2 | Task: zero-shot | PredLen: 336
+Model: PrismGTS | ModelID: 3_3_128_ETTh2_512_336
+Setting: 3_3_128_ETTh2_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.378285 | MAE: 0.415415
+
+Dataset: ETTh2 | Task: zero-shot | PredLen: 720
+Model: PrismGTS | ModelID: 3_3_128_ETTh2_512_720
+Setting: 3_3_128_ETTh2_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.397503 | MAE: 0.435588
+
+Dataset: ETTm1 | Task: zero-shot | PredLen: 96
+Model: PrismGTS | ModelID: 3_3_128_ETTm1_512_96
+Setting: 3_3_128_ETTm1_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.477508 | MAE: 0.447551
+
+Dataset: ETTm1 | Task: zero-shot | PredLen: 192
+Model: PrismGTS | ModelID: 3_3_128_ETTm1_512_192
+Setting: 3_3_128_ETTm1_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.500386 | MAE: 0.461938
+
+Dataset: ETTm1 | Task: zero-shot | PredLen: 336
+Model: PrismGTS | ModelID: 3_3_128_ETTm1_512_336
+Setting: 3_3_128_ETTm1_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.513288 | MAE: 0.471201
+
+Dataset: ETTm1 | Task: zero-shot | PredLen: 720
+Model: PrismGTS | ModelID: 3_3_128_ETTm1_512_720
+Setting: 3_3_128_ETTm1_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.552183 | MAE: 0.494662
+
+Dataset: ETTm2 | Task: zero-shot | PredLen: 96
+Model: PrismGTS | ModelID: 3_3_128_ETTm2_512_96
+Setting: 3_3_128_ETTm2_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.200329 | MAE: 0.286265
+
+Dataset: ETTm2 | Task: zero-shot | PredLen: 192
+Model: PrismGTS | ModelID: 3_3_128_ETTm2_512_192
+Setting: 3_3_128_ETTm2_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.262963 | MAE: 0.326178
+
+Dataset: ETTm2 | Task: zero-shot | PredLen: 336
+Model: PrismGTS | ModelID: 3_3_128_ETTm2_512_336
+Setting: 3_3_128_ETTm2_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.318539 | MAE: 0.358268
+
+Dataset: ETTm2 | Task: zero-shot | PredLen: 720
+Model: PrismGTS | ModelID: 3_3_128_ETTm2_512_720
+Setting: 3_3_128_ETTm2_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.405739 | MAE: 0.408849
+
+Dataset: weather | Task: zero-shot | PredLen: 96
+Model: PrismGTS | ModelID: 3_3_128_weather_512_96
+Setting: 3_3_128_weather_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.177379 | MAE: 0.229863
+
+Dataset: weather | Task: zero-shot | PredLen: 192
+Model: PrismGTS | ModelID: 3_3_128_weather_512_192
+Setting: 3_3_128_weather_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.225125 | MAE: 0.271833
+
+Dataset: weather | Task: zero-shot | PredLen: 336
+Model: PrismGTS | ModelID: 3_3_128_weather_512_336
+Setting: 3_3_128_weather_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.275880 | MAE: 0.308296
+
+Dataset: weather | Task: zero-shot | PredLen: 720
+Model: PrismGTS | ModelID: 3_3_128_weather_512_720
+Setting: 3_3_128_weather_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.346938 | MAE: 0.354287
+
+Dataset: electricity | Task: zero-shot | PredLen: 96
+Model: PrismGTS | ModelID: 3_3_128_electricity_512_96
+Setting: 3_3_128_electricity_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.167362 | MAE: 0.268670
+
+Dataset: electricity | Task: zero-shot | PredLen: 192
+Model: PrismGTS | ModelID: 3_3_128_electricity_512_192
+Setting: 3_3_128_electricity_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.181609 | MAE: 0.280572
+
+Dataset: electricity | Task: zero-shot | PredLen: 336
+Model: PrismGTS | ModelID: 3_3_128_electricity_512_336
+Setting: 3_3_128_electricity_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.195572 | MAE: 0.293675
+
+Dataset: electricity | Task: zero-shot | PredLen: 720
+Model: PrismGTS | ModelID: 3_3_128_electricity_512_720
+Setting: 3_3_128_electricity_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.233582 | MAE: 0.323237
+
+Dataset: traffic | Task: zero-shot | PredLen: 96
+Model: PrismGTS | ModelID: 3_3_128_traffic_512_96
+Setting: 3_3_128_traffic_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.461647 | MAE: 0.333783
+
+Dataset: traffic | Task: zero-shot | PredLen: 192
+Model: PrismGTS | ModelID: 3_3_128_traffic_512_192
+Setting: 3_3_128_traffic_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.478032 | MAE: 0.340526
+
+Dataset: traffic | Task: zero-shot | PredLen: 336
+Model: PrismGTS | ModelID: 3_3_128_traffic_512_336
+Setting: 3_3_128_traffic_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.486072 | MAE: 0.343261
+
+Dataset: traffic | Task: zero-shot | PredLen: 720
+Model: PrismGTS | ModelID: 3_3_128_traffic_512_720
+Setting: 3_3_128_traffic_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0
+Checkpoint: "PrismGTS.pth"
+MSE: 0.518044 | MAE: 0.357295
+

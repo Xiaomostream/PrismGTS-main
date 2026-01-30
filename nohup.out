@@ -1,0 +1,2323 @@
+============================================================
+PrismGTS Zero-Shot Evaluation - All Datasets
+Prediction Lengths: 96, 192, 336, 720
+Pretrained Model: ./checkpoints/0-shot/PrismGTS.pth
+============================================================
+
+###############################################################
+# Dataset: ETTh1
+# checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+###############################################################
+
+----------------------------------------------------------------
+[ETTh1] Pred Len: 96 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS V3 (Split Decoder) Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+---------------------------------------------------------------------------
+TOTAL                   5,294,496    1,611,534    3,682,962
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTh1_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 19495
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (38, 512, 96, 1) (38, 512, 96, 1)
+test shape: (19456, 96, 1) (19456, 96, 1)
+mse:0.38366103172302246, mae:0.4057956635951996
+
+###############################################################
+# Dataset: ETTh2
+# checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+###############################################################
+
+----------------------------------------------------------------
+[ETTh2] Pred Len: 96 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS V3 (Split Decoder) Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+---------------------------------------------------------------------------
+TOTAL                   5,294,496    1,611,534    3,682,962
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTh2_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 19495
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (38, 512, 96, 1) (38, 512, 96, 1)
+test shape: (19456, 96, 1) (19456, 96, 1)
+mse:0.3033210337162018, mae:0.35476672649383545
+
+###############################################################
+# Dataset: ETTm1
+# checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+###############################################################
+
+----------------------------------------------------------------
+[ETTm1] Pred Len: 96 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS V3 (Split Decoder) Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+---------------------------------------------------------------------------
+TOTAL                   5,294,496    1,611,534    3,682,962
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTm1_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 79975
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (156, 512, 96, 1) (156, 512, 96, 1)
+test shape: (79872, 96, 1) (79872, 96, 1)
+mse:0.477508544921875, mae:0.447551429271698
+
+###############################################################
+# Dataset: ETTm2
+# checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+###############################################################
+
+----------------------------------------------------------------
+[ETTm2] Pred Len: 96 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS V3 (Split Decoder) Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+---------------------------------------------------------------------------
+TOTAL                   5,294,496    1,611,534    3,682,962
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTm2_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 79975
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+============================================================
+PrismGTS Zero-Shot Evaluation - All Datasets
+Prediction Lengths: 96, 192, 336, 720
+Pretrained Model: ./checkpoints/0-shot/PrismGTS.pth
+============================================================
+
+###############################################################
+# Dataset: ETTh1
+# checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+###############################################################
+
+----------------------------------------------------------------
+[ETTh1] Pred Len: 96 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+---------------------------------------------------------------------------
+TOTAL                   5,294,496    1,611,534    3,682,962
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTh1_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 19495
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (38, 512, 96, 1) (38, 512, 96, 1)
+test shape: (19456, 96, 1) (19456, 96, 1)
+mse:0.38366103172302246, mae:0.4057956635951996
+
+----------------------------------------------------------------
+[ETTh1] Pred Len: 192 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+---------------------------------------------------------------------------
+TOTAL                   5,294,496    1,611,534    3,682,962
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTh1_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 18823
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (36, 512, 192, 1) (36, 512, 192, 1)
+test shape: (18432, 192, 1) (18432, 192, 1)
+mse:0.41325804591178894, mae:0.42601120471954346
+
+----------------------------------------------------------------
+[ETTh1] Pred Len: 336 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+---------------------------------------------------------------------------
+TOTAL                   5,294,496    1,611,534    3,682,962
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTh1_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 17815
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (34, 512, 336, 1) (34, 512, 336, 1)
+test shape: (17408, 336, 1) (17408, 336, 1)
+mse:0.4233309030532837, mae:0.43368402123451233
+
+----------------------------------------------------------------
+[ETTh1] Pred Len: 720 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+---------------------------------------------------------------------------
+TOTAL                   5,294,496    1,611,534    3,682,962
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTh1_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 15127
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (29, 512, 720, 1) (29, 512, 720, 1)
+test shape: (14848, 720, 1) (14848, 720, 1)
+mse:0.4416922628879547, mae:0.45725709199905396
+
+###############################################################
+# Dataset: ETTh2
+# checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+###############################################################
+
+----------------------------------------------------------------
+[ETTh2] Pred Len: 96 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+---------------------------------------------------------------------------
+TOTAL                   5,294,496    1,611,534    3,682,962
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTh2_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 19495
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (38, 512, 96, 1) (38, 512, 96, 1)
+test shape: (19456, 96, 1) (19456, 96, 1)
+mse:0.3033210337162018, mae:0.35476672649383545
+
+----------------------------------------------------------------
+[ETTh2] Pred Len: 192 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+---------------------------------------------------------------------------
+TOTAL                   5,294,496    1,611,534    3,682,962
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTh2_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 18823
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (36, 512, 192, 1) (36, 512, 192, 1)
+test shape: (18432, 192, 1) (18432, 192, 1)
+mse:0.36202508211135864, mae:0.3952450156211853
+
+----------------------------------------------------------------
+[ETTh2] Pred Len: 336 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+---------------------------------------------------------------------------
+TOTAL                   5,294,496    1,611,534    3,682,962
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTh2_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 17815
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+============================================================
+PrismGTS Zero-Shot Evaluation - All Datasets
+Prediction Lengths: 96, 192, 336, 720
+Pretrained Model: ./checkpoints/0-shot/PrismGTS.pth
+============================================================
+
+###############################################################
+# Dataset: ETTh1
+# checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+###############################################################
+
+----------------------------------------------------------------
+[ETTh1] Pred Len: 96 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTh1_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 19495
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (152, 128, 96, 1) (152, 128, 96, 1)
+test shape: (19456, 96, 1) (19456, 96, 1)
+mse:0.38366106152534485, mae:0.405795693397522
+
+----------------------------------------------------------------
+[ETTh1] Pred Len: 192 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTh1_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 18823
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (147, 128, 192, 1) (147, 128, 192, 1)
+test shape: (18816, 192, 1) (18816, 192, 1)
+mse:0.4059124290943146, mae:0.4210970103740692
+
+----------------------------------------------------------------
+[ETTh1] Pred Len: 336 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTh1_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 17815
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (139, 128, 336, 1) (139, 128, 336, 1)
+test shape: (17792, 336, 1) (17792, 336, 1)
+mse:0.4157519042491913, mae:0.4289768934249878
+
+----------------------------------------------------------------
+[ETTh1] Pred Len: 720 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTh1_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 15127
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (118, 128, 720, 1) (118, 128, 720, 1)
+test shape: (15104, 720, 1) (15104, 720, 1)
+mse:0.4353528618812561, mae:0.4529365003108978
+
+###############################################################
+# Dataset: ETTh2
+# checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+###############################################################
+
+----------------------------------------------------------------
+[ETTh2] Pred Len: 96 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTh2_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 19495
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (152, 128, 96, 1) (152, 128, 96, 1)
+test shape: (19456, 96, 1) (19456, 96, 1)
+mse:0.30332106351852417, mae:0.35476675629615784
+
+----------------------------------------------------------------
+[ETTh2] Pred Len: 192 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTh2_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 18823
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (147, 128, 192, 1) (147, 128, 192, 1)
+test shape: (18816, 192, 1) (18816, 192, 1)
+mse:0.35830414295196533, mae:0.39388784766197205
+
+----------------------------------------------------------------
+[ETTh2] Pred Len: 336 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTh2_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 17815
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (139, 128, 336, 1) (139, 128, 336, 1)
+test shape: (17792, 336, 1) (17792, 336, 1)
+mse:0.37828490138053894, mae:0.41541531682014465
+
+----------------------------------------------------------------
+[ETTh2] Pred Len: 720 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTh2_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 15127
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (118, 128, 720, 1) (118, 128, 720, 1)
+test shape: (15104, 720, 1) (15104, 720, 1)
+mse:0.39750346541404724, mae:0.43558788299560547
+
+###############################################################
+# Dataset: ETTm1
+# checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+###############################################################
+
+----------------------------------------------------------------
+[ETTm1] Pred Len: 96 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTm1_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 79975
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (624, 128, 96, 1) (624, 128, 96, 1)
+test shape: (79872, 96, 1) (79872, 96, 1)
+mse:0.4775084853172302, mae:0.4475513994693756
+
+----------------------------------------------------------------
+[ETTm1] Pred Len: 192 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTm1_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 79303
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (619, 128, 192, 1) (619, 128, 192, 1)
+test shape: (79232, 192, 1) (79232, 192, 1)
+mse:0.5003858208656311, mae:0.4619380235671997
+
+----------------------------------------------------------------
+[ETTm1] Pred Len: 336 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTm1_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 78295
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (611, 128, 336, 1) (611, 128, 336, 1)
+test shape: (78208, 336, 1) (78208, 336, 1)
+mse:0.5132876634597778, mae:0.47120076417922974
+
+----------------------------------------------------------------
+[ETTm1] Pred Len: 720 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTm1_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 75607
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (590, 128, 720, 1) (590, 128, 720, 1)
+test shape: (75520, 720, 1) (75520, 720, 1)
+mse:0.5521833896636963, mae:0.4946618974208832
+
+###############################################################
+# Dataset: ETTm2
+# checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+###############################################################
+
+----------------------------------------------------------------
+[ETTm2] Pred Len: 96 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTm2_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 79975
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (624, 128, 96, 1) (624, 128, 96, 1)
+test shape: (79872, 96, 1) (79872, 96, 1)
+mse:0.20032860338687897, mae:0.28626513481140137
+
+----------------------------------------------------------------
+[ETTm2] Pred Len: 192 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTm2_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 79303
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (619, 128, 192, 1) (619, 128, 192, 1)
+test shape: (79232, 192, 1) (79232, 192, 1)
+mse:0.26296254992485046, mae:0.32617753744125366
+
+----------------------------------------------------------------
+[ETTm2] Pred Len: 336 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTm2_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 78295
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (611, 128, 336, 1) (611, 128, 336, 1)
+test shape: (78208, 336, 1) (78208, 336, 1)
+mse:0.31853899359703064, mae:0.35826846957206726
+
+----------------------------------------------------------------
+[ETTm2] Pred Len: 720 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_ETTm2_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 75607
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (590, 128, 720, 1) (590, 128, 720, 1)
+test shape: (75520, 720, 1) (75520, 720, 1)
+mse:0.4057386815547943, mae:0.4088485836982727
+
+###############################################################
+# Dataset: weather
+# checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+###############################################################
+
+----------------------------------------------------------------
+[weather] Pred Len: 96 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_weather_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 219324
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (1713, 128, 96, 1) (1713, 128, 96, 1)
+test shape: (219264, 96, 1) (219264, 96, 1)
+mse:0.17737941443920135, mae:0.22986334562301636
+
+----------------------------------------------------------------
+[weather] Pred Len: 192 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_weather_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 217308
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (1697, 128, 192, 1) (1697, 128, 192, 1)
+test shape: (217216, 192, 1) (217216, 192, 1)
+mse:0.22512486577033997, mae:0.2718328833580017
+
+----------------------------------------------------------------
+[weather] Pred Len: 336 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_weather_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 214284
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (1674, 128, 336, 1) (1674, 128, 336, 1)
+test shape: (214272, 336, 1) (214272, 336, 1)
+mse:0.27588048577308655, mae:0.3082958459854126
+
+----------------------------------------------------------------
+[weather] Pred Len: 720 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_weather_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 206220
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (1611, 128, 720, 1) (1611, 128, 720, 1)
+test shape: (206208, 720, 1) (206208, 720, 1)
+mse:0.34693828225135803, mae:0.35428693890571594
+
+###############################################################
+# Dataset: electricity
+# checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+###############################################################
+
+----------------------------------------------------------------
+[electricity] Pred Len: 96 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_electricity_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+Traceback (most recent call last):
+  File "/home/yjs1/kilo/H100/PrismGTS-main/run.py", line 217, in <module>
+    exp.test(setting, test=1)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 658, in test
+    test_data, test_loader = self._get_data(flag='test')
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 43, in _get_data
+    data_set, data_loader = data_provider(self.args, flag)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_factory.py", line 33, in data_provider
+    data_set = Data(
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 260, in __init__
+    self.__read_data__()
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 266, in __read_data__
+    df_raw = pd.read_csv(dataset_file_path)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: './dataset/electricity/electricity.csv'
+
+----------------------------------------------------------------
+[electricity] Pred Len: 192 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_electricity_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+Traceback (most recent call last):
+  File "/home/yjs1/kilo/H100/PrismGTS-main/run.py", line 217, in <module>
+    exp.test(setting, test=1)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 658, in test
+    test_data, test_loader = self._get_data(flag='test')
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 43, in _get_data
+    data_set, data_loader = data_provider(self.args, flag)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_factory.py", line 33, in data_provider
+    data_set = Data(
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 260, in __init__
+    self.__read_data__()
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 266, in __read_data__
+    df_raw = pd.read_csv(dataset_file_path)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: './dataset/electricity/electricity.csv'
+
+----------------------------------------------------------------
+[electricity] Pred Len: 336 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_electricity_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+Traceback (most recent call last):
+  File "/home/yjs1/kilo/H100/PrismGTS-main/run.py", line 217, in <module>
+    exp.test(setting, test=1)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 658, in test
+    test_data, test_loader = self._get_data(flag='test')
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 43, in _get_data
+    data_set, data_loader = data_provider(self.args, flag)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_factory.py", line 33, in data_provider
+    data_set = Data(
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 260, in __init__
+    self.__read_data__()
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 266, in __read_data__
+    df_raw = pd.read_csv(dataset_file_path)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: './dataset/electricity/electricity.csv'
+
+----------------------------------------------------------------
+[electricity] Pred Len: 720 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_electricity_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+Traceback (most recent call last):
+  File "/home/yjs1/kilo/H100/PrismGTS-main/run.py", line 217, in <module>
+    exp.test(setting, test=1)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 658, in test
+    test_data, test_loader = self._get_data(flag='test')
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 43, in _get_data
+    data_set, data_loader = data_provider(self.args, flag)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_factory.py", line 33, in data_provider
+    data_set = Data(
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 260, in __init__
+    self.__read_data__()
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 266, in __read_data__
+    df_raw = pd.read_csv(dataset_file_path)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: './dataset/electricity/electricity.csv'
+
+###############################################################
+# Dataset: traffic
+# checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+###############################################################
+
+----------------------------------------------------------------
+[traffic] Pred Len: 96 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_traffic_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+Traceback (most recent call last):
+  File "/home/yjs1/kilo/H100/PrismGTS-main/run.py", line 217, in <module>
+    exp.test(setting, test=1)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 658, in test
+    test_data, test_loader = self._get_data(flag='test')
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 43, in _get_data
+    data_set, data_loader = data_provider(self.args, flag)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_factory.py", line 33, in data_provider
+    data_set = Data(
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 260, in __init__
+    self.__read_data__()
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 266, in __read_data__
+    df_raw = pd.read_csv(dataset_file_path)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: './dataset/traffic/traffic.csv'
+
+----------------------------------------------------------------
+[traffic] Pred Len: 192 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_traffic_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+Traceback (most recent call last):
+  File "/home/yjs1/kilo/H100/PrismGTS-main/run.py", line 217, in <module>
+    exp.test(setting, test=1)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 658, in test
+    test_data, test_loader = self._get_data(flag='test')
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 43, in _get_data
+    data_set, data_loader = data_provider(self.args, flag)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_factory.py", line 33, in data_provider
+    data_set = Data(
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 260, in __init__
+    self.__read_data__()
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 266, in __read_data__
+    df_raw = pd.read_csv(dataset_file_path)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: './dataset/traffic/traffic.csv'
+
+----------------------------------------------------------------
+[traffic] Pred Len: 336 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_traffic_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+Traceback (most recent call last):
+  File "/home/yjs1/kilo/H100/PrismGTS-main/run.py", line 217, in <module>
+    exp.test(setting, test=1)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 658, in test
+    test_data, test_loader = self._get_data(flag='test')
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 43, in _get_data
+    data_set, data_loader = data_provider(self.args, flag)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_factory.py", line 33, in data_provider
+    data_set = Data(
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 260, in __init__
+    self.__read_data__()
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 266, in __read_data__
+    df_raw = pd.read_csv(dataset_file_path)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: './dataset/traffic/traffic.csv'
+
+----------------------------------------------------------------
+[traffic] Pred Len: 720 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_traffic_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+Traceback (most recent call last):
+  File "/home/yjs1/kilo/H100/PrismGTS-main/run.py", line 217, in <module>
+    exp.test(setting, test=1)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 658, in test
+    test_data, test_loader = self._get_data(flag='test')
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 43, in _get_data
+    data_set, data_loader = data_provider(self.args, flag)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_factory.py", line 33, in data_provider
+    data_set = Data(
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 260, in __init__
+    self.__read_data__()
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 266, in __read_data__
+    df_raw = pd.read_csv(dataset_file_path)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: './dataset/traffic/traffic.csv'
+============================================================
+PrismGTS Zero-Shot Evaluation - All Datasets
+Prediction Lengths: 96, 192, 336, 720
+Pretrained Model: ./checkpoints/0-shot/PrismGTS.pth
+============================================================
+
+###############################################################
+# Dataset: electricity
+# checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+###############################################################
+
+----------------------------------------------------------------
+[electricity] Pred Len: 96 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_electricity_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+Traceback (most recent call last):
+  File "/home/yjs1/kilo/H100/PrismGTS-main/run.py", line 217, in <module>
+    exp.test(setting, test=1)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 658, in test
+    test_data, test_loader = self._get_data(flag='test')
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 43, in _get_data
+    data_set, data_loader = data_provider(self.args, flag)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_factory.py", line 33, in data_provider
+    data_set = Data(
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 260, in __init__
+    self.__read_data__()
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 266, in __read_data__
+    df_raw = pd.read_csv(dataset_file_path)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: './dataset/electricity/electricity.csv'
+
+----------------------------------------------------------------
+[electricity] Pred Len: 192 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_electricity_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+Traceback (most recent call last):
+  File "/home/yjs1/kilo/H100/PrismGTS-main/run.py", line 217, in <module>
+    exp.test(setting, test=1)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 658, in test
+    test_data, test_loader = self._get_data(flag='test')
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 43, in _get_data
+    data_set, data_loader = data_provider(self.args, flag)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_factory.py", line 33, in data_provider
+    data_set = Data(
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 260, in __init__
+    self.__read_data__()
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 266, in __read_data__
+    df_raw = pd.read_csv(dataset_file_path)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: './dataset/electricity/electricity.csv'
+
+----------------------------------------------------------------
+[electricity] Pred Len: 336 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_electricity_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+Traceback (most recent call last):
+  File "/home/yjs1/kilo/H100/PrismGTS-main/run.py", line 217, in <module>
+    exp.test(setting, test=1)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 658, in test
+    test_data, test_loader = self._get_data(flag='test')
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 43, in _get_data
+    data_set, data_loader = data_provider(self.args, flag)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_factory.py", line 33, in data_provider
+    data_set = Data(
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 260, in __init__
+    self.__read_data__()
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 266, in __read_data__
+    df_raw = pd.read_csv(dataset_file_path)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: './dataset/electricity/electricity.csv'
+
+----------------------------------------------------------------
+[electricity] Pred Len: 720 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_electricity_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+Traceback (most recent call last):
+  File "/home/yjs1/kilo/H100/PrismGTS-main/run.py", line 217, in <module>
+    exp.test(setting, test=1)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 658, in test
+    test_data, test_loader = self._get_data(flag='test')
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 43, in _get_data
+    data_set, data_loader = data_provider(self.args, flag)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_factory.py", line 33, in data_provider
+    data_set = Data(
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 260, in __init__
+    self.__read_data__()
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 266, in __read_data__
+    df_raw = pd.read_csv(dataset_file_path)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: './dataset/electricity/electricity.csv'
+
+###############################################################
+# Dataset: traffic
+# checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+###############################################################
+
+----------------------------------------------------------------
+[traffic] Pred Len: 96 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_traffic_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+Traceback (most recent call last):
+  File "/home/yjs1/kilo/H100/PrismGTS-main/run.py", line 217, in <module>
+    exp.test(setting, test=1)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 658, in test
+    test_data, test_loader = self._get_data(flag='test')
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 43, in _get_data
+    data_set, data_loader = data_provider(self.args, flag)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_factory.py", line 33, in data_provider
+    data_set = Data(
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 260, in __init__
+    self.__read_data__()
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 266, in __read_data__
+    df_raw = pd.read_csv(dataset_file_path)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: './dataset/traffic/traffic.csv'
+
+----------------------------------------------------------------
+[traffic] Pred Len: 192 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_traffic_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+Traceback (most recent call last):
+  File "/home/yjs1/kilo/H100/PrismGTS-main/run.py", line 217, in <module>
+    exp.test(setting, test=1)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 658, in test
+    test_data, test_loader = self._get_data(flag='test')
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 43, in _get_data
+    data_set, data_loader = data_provider(self.args, flag)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_factory.py", line 33, in data_provider
+    data_set = Data(
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 260, in __init__
+    self.__read_data__()
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 266, in __read_data__
+    df_raw = pd.read_csv(dataset_file_path)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: './dataset/traffic/traffic.csv'
+
+----------------------------------------------------------------
+[traffic] Pred Len: 336 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_traffic_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+Traceback (most recent call last):
+  File "/home/yjs1/kilo/H100/PrismGTS-main/run.py", line 217, in <module>
+    exp.test(setting, test=1)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 658, in test
+    test_data, test_loader = self._get_data(flag='test')
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 43, in _get_data
+    data_set, data_loader = data_provider(self.args, flag)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_factory.py", line 33, in data_provider
+    data_set = Data(
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 260, in __init__
+    self.__read_data__()
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 266, in __read_data__
+    df_raw = pd.read_csv(dataset_file_path)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: './dataset/traffic/traffic.csv'
+
+----------------------------------------------------------------
+[traffic] Pred Len: 720 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_traffic_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+Traceback (most recent call last):
+  File "/home/yjs1/kilo/H100/PrismGTS-main/run.py", line 217, in <module>
+    exp.test(setting, test=1)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 658, in test
+    test_data, test_loader = self._get_data(flag='test')
+  File "/home/yjs1/kilo/H100/PrismGTS-main/exp/exp_long_term_forecasting.py", line 43, in _get_data
+    data_set, data_loader = data_provider(self.args, flag)
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_factory.py", line 33, in data_provider
+    data_set = Data(
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 260, in __init__
+    self.__read_data__()
+  File "/home/yjs1/kilo/H100/PrismGTS-main/data_provider/data_loader_benchmark.py", line 266, in __read_data__
+    df_raw = pd.read_csv(dataset_file_path)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "/home/yjs1/anaconda3/envs/xiaomo/lib/python3.10/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: './dataset/traffic/traffic.csv'
+============================================================
+PrismGTS Zero-Shot Evaluation - All Datasets
+Prediction Lengths: 96, 192, 336, 720
+Pretrained Model: ./checkpoints/0-shot/PrismGTS.pth
+============================================================
+
+###############################################################
+# Dataset: electricity
+# checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+###############################################################
+
+----------------------------------------------------------------
+[electricity] Pred Len: 96 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_electricity_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 1657965
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (12952, 128, 96, 1) (12952, 128, 96, 1)
+test shape: (1657856, 96, 1) (1657856, 96, 1)
+mse:0.16736194491386414, mae:0.2686697840690613
+
+----------------------------------------------------------------
+[electricity] Pred Len: 192 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_electricity_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 1627149
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (12712, 128, 192, 1) (12712, 128, 192, 1)
+test shape: (1627136, 192, 1) (1627136, 192, 1)
+mse:0.18160879611968994, mae:0.28057190775871277
+
+----------------------------------------------------------------
+[electricity] Pred Len: 336 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_electricity_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 1580925
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (12350, 128, 336, 1) (12350, 128, 336, 1)
+test shape: (1580800, 336, 1) (1580800, 336, 1)
+mse:0.19557198882102966, mae:0.29367491602897644
+
+----------------------------------------------------------------
+[electricity] Pred Len: 720 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_electricity_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 1457661
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (11387, 128, 720, 1) (11387, 128, 720, 1)
+test shape: (1457536, 720, 1) (1457536, 720, 1)
+mse:0.23358209431171417, mae:0.32323741912841797
+
+###############################################################
+# Dataset: traffic
+# checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+###############################################################
+
+----------------------------------------------------------------
+[traffic] Pred Len: 96 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_traffic_512_96_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl96_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 2942006
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (22984, 128, 96, 1) (22984, 128, 96, 1)
+test shape: (2941952, 96, 1) (2941952, 96, 1)
+mse:0.4616469144821167, mae:0.33378276228904724
+
+----------------------------------------------------------------
+[traffic] Pred Len: 192 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_traffic_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 2859254
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (22337, 128, 192, 1) (22337, 128, 192, 1)
+test shape: (2859136, 192, 1) (2859136, 192, 1)
+mse:0.47803178429603577, mae:0.3405260145664215
+
+----------------------------------------------------------------
+[traffic] Pred Len: 336 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_traffic_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 2735126
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (21368, 128, 336, 1) (21368, 128, 336, 1)
+test shape: (2735104, 336, 1) (2735104, 336, 1)
+mse:0.486071914434433, mae:0.34326136112213135
+
+----------------------------------------------------------------
+[traffic] Pred Len: 720 | Checkpoint: ./checkpoints/0-shot/PrismGTS.pth
+----------------------------------------------------------------
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>testing : 3_3_128_traffic_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 2404118
+loading model
+Loading pretrained model from: ./checkpoints/0-shot/PrismGTS.pth
+Checkpoint: "PrismGTS.pth"
+test shape: (18782, 128, 720, 1) (18782, 128, 720, 1)
+test shape: (2404096, 720, 1) (2404096, 720, 1)
+mse:0.5180442929267883, mae:0.3572952151298523

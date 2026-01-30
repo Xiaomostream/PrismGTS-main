@@ -1,0 +1,117 @@
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS V3 (Split Decoder) Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>start training : 3_3_128_10percent_ETTm1_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 18795
+val 75607
+test 75607
+loading model for Stage 2 / Few-shot
+Loading from custom path: ./checkpoints/0-shot/PrismGTS.pth
+Loaded checkpoint successfully
+
+============================================================
+Freezing backbone for Stage 2...
+============================================================
+
+📊 Parameter Statistics by Module (Stage 2):
+------------------------------------------------------------
+Module                      Total  Trainable Status      
+------------------------------------------------------------
+revin_layer_x                   2          0 ❄️ Frozen   
+patch_embed                 8,320          0 ❄️ Frozen   
+semantic_moe              793,104    793,104 🔥 Train     
+trend_encoder             396,675          0 ❄️ Frozen   
+seasonal_encoder          396,675          0 ❄️ Frozen   
+trend_decoder             396,675          0 ❄️ Frozen   
+seasonal_decoder          396,675          0 ❄️ Frozen   
+trend_recon_head            8,256          0 ❄️ Frozen   
+seasonal_recon_head         8,256          0 ❄️ Frozen   
+cross_attention           132,608    132,608 🔥 Train     
+trend_heads             1,378,625  1,378,625 🔥 Train     
+seasonal_heads          1,378,625  1,378,625 🔥 Train     
+============================================================
+
+Model parameters:  3684244
+	iters: 0, epoch: 1 | loss: 2.1446173 | cost_time: 3 | memory: allocated 145MB, reserved 160MB, cached 160MB 
+Updating learning rate to 0.0
+	iters: 100, epoch: 1 | loss: 2.0030069 | cost_time: 34 | memory: allocated 196MB, reserved 228MB, cached 228MB 
+Epoch: 1 cost time: 50.657992124557495
+Epoch: 1, Steps: 146 | Train Loss: 2.3165039 Vali Loss: 3.0830426 Test Loss: 2.0454612
+Epoch 1 saved: ./checkpoints/3_3_128_10percent_ETTm1_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_1.pth
+Validation loss decreased (inf --> 3.083043).  Saving model ...
+	iters: 0, epoch: 2 | loss: 2.2747455 | cost_time: 400 | memory: allocated 196MB, reserved 228MB, cached 228MB 
+	iters: 100, epoch: 2 | loss: 2.2411327 | cost_time: 31 | memory: allocated 196MB, reserved 228MB, cached 228MB 
+Epoch: 2 cost time: 46.400262117385864
+Epoch: 2, Steps: 146 | Train Loss: 2.3087982 Vali Loss: 3.0657327 Test Loss: 2.0341442
+Epoch 2 saved: ./checkpoints/3_3_128_10percent_ETTm1_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_2.pth
+Validation loss decreased (3.083043 --> 3.065733).  Saving model ...
+	iters: 0, epoch: 3 | loss: 2.2337325 | cost_time: 420 | memory: allocated 196MB, reserved 228MB, cached 228MB 
+	iters: 100, epoch: 3 | loss: 2.0421479 | cost_time: 33 | memory: allocated 196MB, reserved 228MB, cached 228MB 
+Epoch: 3 cost time: 48.479976654052734
+Epoch: 3, Steps: 146 | Train Loss: 2.2941706 Vali Loss: 3.0444481 Test Loss: 2.0191140
+Epoch 3 saved: ./checkpoints/3_3_128_10percent_ETTm1_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_3.pth
+Validation loss decreased (3.065733 --> 3.044448).  Saving model ...
+	iters: 0, epoch: 4 | loss: 2.4173081 | cost_time: 389 | memory: allocated 196MB, reserved 228MB, cached 228MB 
+Updating learning rate to 5e-06
+	iters: 100, epoch: 4 | loss: 2.3317139 | cost_time: 34 | memory: allocated 196MB, reserved 228MB, cached 228MB 
+Epoch: 4 cost time: 50.150137186050415
+Epoch: 4, Steps: 146 | Train Loss: 2.2682846 Vali Loss: 3.0267019 Test Loss: 2.0039270
+Epoch 4 saved: ./checkpoints/3_3_128_10percent_ETTm1_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_4.pth
+Validation loss decreased (3.044448 --> 3.026702).  Saving model ...
+	iters: 0, epoch: 5 | loss: 2.6467476 | cost_time: 380 | memory: allocated 196MB, reserved 228MB, cached 228MB 
+	iters: 100, epoch: 5 | loss: 2.3729777 | cost_time: 33 | memory: allocated 196MB, reserved 228MB, cached 228MB 
+Epoch: 5 cost time: 48.81997466087341
+Epoch: 5, Steps: 146 | Train Loss: 2.2493675 Vali Loss: 3.0119898 Test Loss: 1.9901365
+Epoch 5 saved: ./checkpoints/3_3_128_10percent_ETTm1_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_5.pth
+Validation loss decreased (3.026702 --> 3.011990).  Saving model ...
+	iters: 0, epoch: 6 | loss: 2.0874512 | cost_time: 380 | memory: allocated 196MB, reserved 228MB, cached 228MB 
+	iters: 100, epoch: 6 | loss: 2.3807468 | cost_time: 34 | memory: allocated 196MB, reserved 228MB, cached 228MB 
+Epoch: 6 cost time: 50.915178298950195
+Epoch: 6, Steps: 146 | Train Loss: 2.2191409 Vali Loss: 3.0025420 Test Loss: 1.9801236
+Epoch 6 saved: ./checkpoints/3_3_128_10percent_ETTm1_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_6.pth
+Validation loss decreased (3.011990 --> 3.002542).  Saving model ...
+	iters: 0, epoch: 7 | loss: 2.2731276 | cost_time: 441 | memory: allocated 196MB, reserved 228MB, cached 228MB 
+	iters: 100, epoch: 7 | loss: 1.9261510 | cost_time: 35 | memory: allocated 196MB, reserved 228MB, cached 228MB 
+Updating learning rate to 1e-05
+Epoch: 7 cost time: 51.85633325576782
+Epoch: 7, Steps: 146 | Train Loss: 2.1873158 Vali Loss: 3.0034711 Test Loss: 1.9744227
+Epoch 7 saved: ./checkpoints/3_3_128_10percent_ETTm1_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_7.pth
+EarlyStopping counter: 1 out of 3
+	iters: 0, epoch: 8 | loss: 2.1159050 | cost_time: 436 | memory: allocated 196MB, reserved 228MB, cached 228MB 
+	iters: 100, epoch: 8 | loss: 2.4137921 | cost_time: 37 | memory: allocated 196MB, reserved 228MB, cached 228MB 
+Epoch: 8 cost time: 53.32220411300659
+Epoch: 8, Steps: 146 | Train Loss: 2.1482391 Vali Loss: 3.0185852 Test Loss: 1.9869562
+Epoch 8 saved: ./checkpoints/3_3_128_10percent_ETTm1_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_8.pth
+EarlyStopping counter: 2 out of 3
+	iters: 0, epoch: 9 | loss: 2.4056478 | cost_time: 446 | memory: allocated 196MB, reserved 228MB, cached 228MB 
+	iters: 100, epoch: 9 | loss: 1.9255509 | cost_time: 37 | memory: allocated 196MB, reserved 228MB, cached 228MB 
+Epoch: 9 cost time: 55.7829008102417
+Epoch: 9, Steps: 146 | Train Loss: 2.0968900 Vali Loss: 3.0486078 Test Loss: 2.0068192
+Epoch 9 saved: ./checkpoints/3_3_128_10percent_ETTm1_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_9.pth
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : 3_3_128_10percent_ETTm1_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 75607
+test shape: (590, 128, 720, 1) (590, 128, 720, 1)
+test shape: (75520, 720, 1) (75520, 720, 1)
+mse:0.5114586353302002, mae:0.47728851437568665

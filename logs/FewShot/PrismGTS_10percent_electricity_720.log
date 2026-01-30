@@ -1,0 +1,423 @@
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS V3 (Split Decoder) Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>start training : 3_3_128_10percent_electricity_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 343791
+val 614073
+test 1457661
+loading model for Stage 2 / Few-shot
+Loading from custom path: ./checkpoints/0-shot/PrismGTS.pth
+Loaded checkpoint successfully
+
+============================================================
+Freezing backbone for Stage 2...
+============================================================
+
+📊 Parameter Statistics by Module (Stage 2):
+------------------------------------------------------------
+Module                      Total  Trainable Status      
+------------------------------------------------------------
+revin_layer_x                   2          0 ❄️ Frozen   
+patch_embed                 8,320          0 ❄️ Frozen   
+semantic_moe              793,104    793,104 🔥 Train     
+trend_encoder             396,675          0 ❄️ Frozen   
+seasonal_encoder          396,675          0 ❄️ Frozen   
+trend_decoder             396,675          0 ❄️ Frozen   
+seasonal_decoder          396,675          0 ❄️ Frozen   
+trend_recon_head            8,256          0 ❄️ Frozen   
+seasonal_recon_head         8,256          0 ❄️ Frozen   
+cross_attention           132,608    132,608 🔥 Train     
+trend_heads             1,378,625  1,378,625 🔥 Train     
+seasonal_heads          1,378,625  1,378,625 🔥 Train     
+============================================================
+
+Model parameters:  3684244
+	iters: 0, epoch: 1 | loss: 0.5006194 | cost_time: 3 | memory: allocated 121MB, reserved 148MB, cached 148MB 
+Updating learning rate to 0.0
+	iters: 100, epoch: 1 | loss: 0.5151708 | cost_time: 21 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 200, epoch: 1 | loss: 0.5350636 | cost_time: 21 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 300, epoch: 1 | loss: 0.9841529 | cost_time: 21 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 400, epoch: 1 | loss: 0.6680455 | cost_time: 21 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 500, epoch: 1 | loss: 0.5035525 | cost_time: 21 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 5e-06
+	iters: 600, epoch: 1 | loss: 0.4883963 | cost_time: 21 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 700, epoch: 1 | loss: 0.9121422 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 800, epoch: 1 | loss: 0.4751327 | cost_time: 23 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 900, epoch: 1 | loss: 0.5917219 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1000, epoch: 1 | loss: 0.4359934 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 1e-05
+	iters: 1100, epoch: 1 | loss: 0.5092886 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1200, epoch: 1 | loss: 0.6407665 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1300, epoch: 1 | loss: 0.4449270 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1400, epoch: 1 | loss: 0.4454145 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1500, epoch: 1 | loss: 0.4582868 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 1.4999999999999999e-05
+	iters: 1600, epoch: 1 | loss: 0.4408008 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1700, epoch: 1 | loss: 0.5388794 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1800, epoch: 1 | loss: 0.4410517 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1900, epoch: 1 | loss: 0.4021239 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2000, epoch: 1 | loss: 0.4004239 | cost_time: 21 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 2e-05
+	iters: 2100, epoch: 1 | loss: 0.6599083 | cost_time: 21 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2200, epoch: 1 | loss: 0.5257045 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2300, epoch: 1 | loss: 0.4169754 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2400, epoch: 1 | loss: 0.5583699 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2500, epoch: 1 | loss: 0.3660478 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 2.5e-05
+	iters: 2600, epoch: 1 | loss: 0.3980168 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Epoch: 1 cost time: 585.5052483081818
+Epoch: 1, Steps: 2685 | Train Loss: 0.5389855 Vali Loss: 0.4776322 Test Loss: 0.5246253
+Epoch 1 saved: ./checkpoints/3_3_128_10percent_electricity_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_1.pth
+Validation loss decreased (inf --> 0.477632).  Saving model ...
+	iters: 0, epoch: 2 | loss: 0.5642467 | cost_time: 2969 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 100, epoch: 2 | loss: 0.5215999 | cost_time: 24 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 200, epoch: 2 | loss: 0.4817892 | cost_time: 23 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 300, epoch: 2 | loss: 0.4279434 | cost_time: 23 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 2.9999999999999997e-05
+	iters: 400, epoch: 2 | loss: 0.4560558 | cost_time: 24 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 500, epoch: 2 | loss: 0.3839715 | cost_time: 23 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 600, epoch: 2 | loss: 0.3873961 | cost_time: 23 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 700, epoch: 2 | loss: 0.5277318 | cost_time: 24 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 800, epoch: 2 | loss: 0.3765865 | cost_time: 24 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 3.5000000000000004e-05
+	iters: 900, epoch: 2 | loss: 0.3903242 | cost_time: 23 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1000, epoch: 2 | loss: 0.6126293 | cost_time: 24 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1100, epoch: 2 | loss: 0.3580424 | cost_time: 23 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1200, epoch: 2 | loss: 0.5627861 | cost_time: 23 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1300, epoch: 2 | loss: 0.4619738 | cost_time: 24 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 4e-05
+	iters: 1400, epoch: 2 | loss: 0.4559247 | cost_time: 24 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1500, epoch: 2 | loss: 0.3904279 | cost_time: 23 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1600, epoch: 2 | loss: 0.4242407 | cost_time: 24 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1700, epoch: 2 | loss: 0.3650587 | cost_time: 23 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1800, epoch: 2 | loss: 0.5956830 | cost_time: 24 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 4.5e-05
+	iters: 1900, epoch: 2 | loss: 0.3760294 | cost_time: 23 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2000, epoch: 2 | loss: 0.3806629 | cost_time: 24 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2100, epoch: 2 | loss: 0.4135459 | cost_time: 23 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2200, epoch: 2 | loss: 0.4034799 | cost_time: 24 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2300, epoch: 2 | loss: 0.4203171 | cost_time: 23 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 5e-05
+	iters: 2400, epoch: 2 | loss: 0.4198278 | cost_time: 24 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2500, epoch: 2 | loss: 0.4142834 | cost_time: 24 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2600, epoch: 2 | loss: 0.5257926 | cost_time: 23 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Epoch: 2 cost time: 634.0094575881958
+Epoch: 2, Steps: 2685 | Train Loss: 0.4655769 Vali Loss: 0.4602558 Test Loss: 0.5292630
+Epoch 2 saved: ./checkpoints/3_3_128_10percent_electricity_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_2.pth
+Validation loss decreased (0.477632 --> 0.460256).  Saving model ...
+	iters: 0, epoch: 3 | loss: 0.6667697 | cost_time: 2935 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 100, epoch: 3 | loss: 0.4977254 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 5.5e-05
+	iters: 200, epoch: 3 | loss: 0.4087660 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 300, epoch: 3 | loss: 0.5471365 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 400, epoch: 3 | loss: 0.5126345 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 500, epoch: 3 | loss: 0.6608003 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 600, epoch: 3 | loss: 0.3591716 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 5.9999999999999995e-05
+	iters: 700, epoch: 3 | loss: 0.4036301 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 800, epoch: 3 | loss: 0.4014198 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 900, epoch: 3 | loss: 0.5427853 | cost_time: 17 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1000, epoch: 3 | loss: 0.3929243 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1100, epoch: 3 | loss: 0.4004270 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 6.500000000000001e-05
+	iters: 1200, epoch: 3 | loss: 0.4707310 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1300, epoch: 3 | loss: 0.4265180 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1400, epoch: 3 | loss: 0.4751925 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1500, epoch: 3 | loss: 0.4983689 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1600, epoch: 3 | loss: 0.3886691 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 7.000000000000001e-05
+	iters: 1700, epoch: 3 | loss: 0.4656309 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1800, epoch: 3 | loss: 0.5198910 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1900, epoch: 3 | loss: 0.3772604 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2000, epoch: 3 | loss: 0.3803591 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2100, epoch: 3 | loss: 0.4360863 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 7.5e-05
+	iters: 2200, epoch: 3 | loss: 0.3917407 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2300, epoch: 3 | loss: 0.6299607 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2400, epoch: 3 | loss: 0.5647023 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2500, epoch: 3 | loss: 0.4261837 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2600, epoch: 3 | loss: 0.6142032 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 8e-05
+Epoch: 3 cost time: 415.57008147239685
+Epoch: 3, Steps: 2685 | Train Loss: 0.4440658 Vali Loss: 0.4572178 Test Loss: 0.5306365
+Epoch 3 saved: ./checkpoints/3_3_128_10percent_electricity_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_3.pth
+Validation loss decreased (0.460256 --> 0.457218).  Saving model ...
+	iters: 0, epoch: 4 | loss: 0.4424964 | cost_time: 2083 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 100, epoch: 4 | loss: 0.4130934 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 200, epoch: 4 | loss: 0.3790590 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 300, epoch: 4 | loss: 0.3605117 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 400, epoch: 4 | loss: 0.4087024 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 8.5e-05
+	iters: 500, epoch: 4 | loss: 0.4686056 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 600, epoch: 4 | loss: 0.4812570 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 700, epoch: 4 | loss: 0.4335512 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 800, epoch: 4 | loss: 0.3652960 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 900, epoch: 4 | loss: 0.4169290 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 9e-05
+	iters: 1000, epoch: 4 | loss: 0.3713947 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1100, epoch: 4 | loss: 0.4227641 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1200, epoch: 4 | loss: 0.3661585 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1300, epoch: 4 | loss: 0.4099241 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1400, epoch: 4 | loss: 0.3844473 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 9.5e-05
+	iters: 1500, epoch: 4 | loss: 0.4260063 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1600, epoch: 4 | loss: 0.3497262 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1700, epoch: 4 | loss: 0.3683735 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1800, epoch: 4 | loss: 0.3553900 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1900, epoch: 4 | loss: 0.4591979 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 2000, epoch: 4 | loss: 0.5401012 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2100, epoch: 4 | loss: 0.4447504 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2200, epoch: 4 | loss: 0.3631168 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2300, epoch: 4 | loss: 0.4637588 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2400, epoch: 4 | loss: 0.4620662 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 2500, epoch: 4 | loss: 0.3770794 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2600, epoch: 4 | loss: 0.4718118 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Epoch: 4 cost time: 402.4433512687683
+Epoch: 4, Steps: 2685 | Train Loss: 0.4311006 Vali Loss: 0.4543669 Test Loss: 0.5334474
+Epoch 4 saved: ./checkpoints/3_3_128_10percent_electricity_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_4.pth
+Validation loss decreased (0.457218 --> 0.454367).  Saving model ...
+	iters: 0, epoch: 5 | loss: 0.3659685 | cost_time: 2385 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 100, epoch: 5 | loss: 0.3940152 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 200, epoch: 5 | loss: 0.3702580 | cost_time: 17 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 300, epoch: 5 | loss: 0.4162850 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 400, epoch: 5 | loss: 0.4315555 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 500, epoch: 5 | loss: 0.4824560 | cost_time: 18 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 600, epoch: 5 | loss: 0.4006237 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 700, epoch: 5 | loss: 0.3828008 | cost_time: 17 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 800, epoch: 5 | loss: 0.3982247 | cost_time: 17 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 900, epoch: 5 | loss: 0.6566247 | cost_time: 17 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1000, epoch: 5 | loss: 0.4494281 | cost_time: 17 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1100, epoch: 5 | loss: 0.3765437 | cost_time: 18 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1200, epoch: 5 | loss: 0.4803526 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 1300, epoch: 5 | loss: 0.3688258 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1400, epoch: 5 | loss: 0.3815836 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1500, epoch: 5 | loss: 0.4446504 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1600, epoch: 5 | loss: 0.3567825 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1700, epoch: 5 | loss: 0.4027070 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 1800, epoch: 5 | loss: 0.3928862 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1900, epoch: 5 | loss: 0.5236009 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2000, epoch: 5 | loss: 0.4453453 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2100, epoch: 5 | loss: 0.4628166 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2200, epoch: 5 | loss: 0.4099405 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 2300, epoch: 5 | loss: 0.3779111 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2400, epoch: 5 | loss: 0.3858123 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2500, epoch: 5 | loss: 0.4790940 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2600, epoch: 5 | loss: 0.4164655 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Epoch: 5 cost time: 434.80962443351746
+Epoch: 5, Steps: 2685 | Train Loss: 0.4216458 Vali Loss: 0.4656960 Test Loss: 0.5437487
+Epoch 5 saved: ./checkpoints/3_3_128_10percent_electricity_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_5.pth
+EarlyStopping counter: 1 out of 3
+	iters: 0, epoch: 6 | loss: 0.5464950 | cost_time: 1710 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 100, epoch: 6 | loss: 0.4685710 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 200, epoch: 6 | loss: 0.4380911 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 300, epoch: 6 | loss: 0.4867362 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 400, epoch: 6 | loss: 0.4450173 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 500, epoch: 6 | loss: 0.3413255 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 600, epoch: 6 | loss: 0.4365675 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 700, epoch: 6 | loss: 0.4149570 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 800, epoch: 6 | loss: 0.3667252 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 900, epoch: 6 | loss: 0.4606289 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1000, epoch: 6 | loss: 0.4600637 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 1100, epoch: 6 | loss: 0.4102515 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1200, epoch: 6 | loss: 0.3880467 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1300, epoch: 6 | loss: 0.3701130 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1400, epoch: 6 | loss: 0.3870915 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1500, epoch: 6 | loss: 0.3615043 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 1600, epoch: 6 | loss: 0.3736120 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1700, epoch: 6 | loss: 0.4672324 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1800, epoch: 6 | loss: 0.3747309 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1900, epoch: 6 | loss: 0.3906256 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2000, epoch: 6 | loss: 0.4874309 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 2100, epoch: 6 | loss: 0.4146692 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2200, epoch: 6 | loss: 0.4119046 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2300, epoch: 6 | loss: 0.3865527 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2400, epoch: 6 | loss: 0.4176301 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2500, epoch: 6 | loss: 0.4537228 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 2600, epoch: 6 | loss: 0.4077018 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Epoch: 6 cost time: 420.8243634700775
+Epoch: 6, Steps: 2685 | Train Loss: 0.4155167 Vali Loss: 0.4542406 Test Loss: 0.5415751
+Epoch 6 saved: ./checkpoints/3_3_128_10percent_electricity_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_6.pth
+Validation loss decreased (0.454367 --> 0.454241).  Saving model ...
+	iters: 0, epoch: 7 | loss: 0.3951414 | cost_time: 1706 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 100, epoch: 7 | loss: 0.3676853 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 200, epoch: 7 | loss: 0.4741303 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 300, epoch: 7 | loss: 0.4511450 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 400, epoch: 7 | loss: 0.4020347 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 500, epoch: 7 | loss: 0.4811527 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 600, epoch: 7 | loss: 0.4597750 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 700, epoch: 7 | loss: 0.3629050 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 800, epoch: 7 | loss: 0.4662128 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 900, epoch: 7 | loss: 0.4000035 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1000, epoch: 7 | loss: 0.3658876 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1100, epoch: 7 | loss: 0.3922995 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1200, epoch: 7 | loss: 0.3815552 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1300, epoch: 7 | loss: 0.5141690 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 1400, epoch: 7 | loss: 0.3446817 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1500, epoch: 7 | loss: 0.4364123 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1600, epoch: 7 | loss: 0.3641863 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1700, epoch: 7 | loss: 0.3738189 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1800, epoch: 7 | loss: 0.3956357 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 1900, epoch: 7 | loss: 0.3944453 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2000, epoch: 7 | loss: 0.3950489 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2100, epoch: 7 | loss: 0.3251552 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2200, epoch: 7 | loss: 0.4427165 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2300, epoch: 7 | loss: 0.5086218 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 2400, epoch: 7 | loss: 0.4307905 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2500, epoch: 7 | loss: 0.4595993 | cost_time: 16 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2600, epoch: 7 | loss: 0.3622888 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Epoch: 7 cost time: 423.9007456302643
+Epoch: 7, Steps: 2685 | Train Loss: 0.4111333 Vali Loss: 0.4570791 Test Loss: 0.5322958
+Epoch 7 saved: ./checkpoints/3_3_128_10percent_electricity_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_7.pth
+EarlyStopping counter: 1 out of 3
+	iters: 0, epoch: 8 | loss: 0.4074436 | cost_time: 1682 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 100, epoch: 8 | loss: 0.4039260 | cost_time: 17 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 200, epoch: 8 | loss: 0.3740559 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 300, epoch: 8 | loss: 0.4711044 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 400, epoch: 8 | loss: 0.5479920 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 500, epoch: 8 | loss: 0.3581579 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 600, epoch: 8 | loss: 0.3438150 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 700, epoch: 8 | loss: 0.3842478 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 800, epoch: 8 | loss: 0.4262437 | cost_time: 14 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 900, epoch: 8 | loss: 0.4470133 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1000, epoch: 8 | loss: 0.3977398 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1100, epoch: 8 | loss: 0.4323110 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1200, epoch: 8 | loss: 0.3640500 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 1300, epoch: 8 | loss: 0.4458578 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1400, epoch: 8 | loss: 0.3946672 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1500, epoch: 8 | loss: 0.3175347 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1600, epoch: 8 | loss: 0.4228326 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1700, epoch: 8 | loss: 0.4062191 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 1800, epoch: 8 | loss: 0.4281232 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1900, epoch: 8 | loss: 0.3878719 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2000, epoch: 8 | loss: 0.4105239 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2100, epoch: 8 | loss: 0.3159803 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2200, epoch: 8 | loss: 0.4026110 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 2300, epoch: 8 | loss: 0.3813842 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2400, epoch: 8 | loss: 0.4891564 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2500, epoch: 8 | loss: 0.3492137 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2600, epoch: 8 | loss: 0.3784108 | cost_time: 15 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Epoch: 8 cost time: 409.1590094566345
+Epoch: 8, Steps: 2685 | Train Loss: 0.4076781 Vali Loss: 0.4515552 Test Loss: 0.5454214
+Epoch 8 saved: ./checkpoints/3_3_128_10percent_electricity_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_8.pth
+Validation loss decreased (0.454241 --> 0.451555).  Saving model ...
+	iters: 0, epoch: 9 | loss: 0.4438815 | cost_time: 2229 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 100, epoch: 9 | loss: 0.3489934 | cost_time: 20 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 200, epoch: 9 | loss: 0.3964395 | cost_time: 20 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 300, epoch: 9 | loss: 0.3664182 | cost_time: 19 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 400, epoch: 9 | loss: 0.3885877 | cost_time: 19 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 500, epoch: 9 | loss: 0.3947503 | cost_time: 19 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 600, epoch: 9 | loss: 0.3402046 | cost_time: 19 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 700, epoch: 9 | loss: 0.3857030 | cost_time: 19 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 800, epoch: 9 | loss: 0.3998618 | cost_time: 19 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 900, epoch: 9 | loss: 0.4983012 | cost_time: 19 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1000, epoch: 9 | loss: 0.3368537 | cost_time: 20 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 1100, epoch: 9 | loss: 0.4055964 | cost_time: 19 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1200, epoch: 9 | loss: 0.3446012 | cost_time: 19 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1300, epoch: 9 | loss: 0.3757390 | cost_time: 19 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1400, epoch: 9 | loss: 0.3840024 | cost_time: 20 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1500, epoch: 9 | loss: 0.4498155 | cost_time: 20 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 1600, epoch: 9 | loss: 0.4682928 | cost_time: 18 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1700, epoch: 9 | loss: 0.4676142 | cost_time: 19 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1800, epoch: 9 | loss: 0.3487614 | cost_time: 19 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1900, epoch: 9 | loss: 0.3589327 | cost_time: 19 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2000, epoch: 9 | loss: 0.3635040 | cost_time: 19 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 2100, epoch: 9 | loss: 0.3788092 | cost_time: 19 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2200, epoch: 9 | loss: 0.5189649 | cost_time: 19 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2300, epoch: 9 | loss: 0.3460299 | cost_time: 19 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2400, epoch: 9 | loss: 0.3873202 | cost_time: 19 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2500, epoch: 9 | loss: 0.3959054 | cost_time: 19 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 2600, epoch: 9 | loss: 0.3647550 | cost_time: 19 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Epoch: 9 cost time: 514.911830663681
+Epoch: 9, Steps: 2685 | Train Loss: 0.4046903 Vali Loss: 0.4628153 Test Loss: 0.5386195
+Epoch 9 saved: ./checkpoints/3_3_128_10percent_electricity_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_9.pth
+EarlyStopping counter: 1 out of 3
+	iters: 0, epoch: 10 | loss: 0.3828686 | cost_time: 2355 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 100, epoch: 10 | loss: 0.3697695 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 200, epoch: 10 | loss: 0.3541319 | cost_time: 21 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 300, epoch: 10 | loss: 0.3702091 | cost_time: 20 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 400, epoch: 10 | loss: 0.4191352 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 500, epoch: 10 | loss: 0.3908334 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 600, epoch: 10 | loss: 0.3930901 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 700, epoch: 10 | loss: 0.3915807 | cost_time: 21 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 800, epoch: 10 | loss: 0.3826159 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 900, epoch: 10 | loss: 0.3912987 | cost_time: 22 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1000, epoch: 10 | loss: 0.4926369 | cost_time: 21 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1100, epoch: 10 | loss: 0.3803874 | cost_time: 20 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1200, epoch: 10 | loss: 0.4367777 | cost_time: 20 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1300, epoch: 10 | loss: 0.4261460 | cost_time: 21 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 1400, epoch: 10 | loss: 0.3567215 | cost_time: 19 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1500, epoch: 10 | loss: 0.4317685 | cost_time: 19 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1600, epoch: 10 | loss: 0.3705074 | cost_time: 20 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1700, epoch: 10 | loss: 0.3894793 | cost_time: 20 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 1800, epoch: 10 | loss: 0.3781992 | cost_time: 20 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 1900, epoch: 10 | loss: 0.3426457 | cost_time: 20 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2000, epoch: 10 | loss: 0.3974065 | cost_time: 20 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2100, epoch: 10 | loss: 0.4120066 | cost_time: 20 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2200, epoch: 10 | loss: 0.3293707 | cost_time: 20 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2300, epoch: 10 | loss: 0.3467323 | cost_time: 20 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Updating learning rate to 0.0001
+	iters: 2400, epoch: 10 | loss: 0.4006081 | cost_time: 21 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2500, epoch: 10 | loss: 0.4173328 | cost_time: 21 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+	iters: 2600, epoch: 10 | loss: 0.4139959 | cost_time: 20 | memory: allocated 148MB, reserved 184MB, cached 184MB 
+Epoch: 10 cost time: 563.7038531303406
+Epoch: 10, Steps: 2685 | Train Loss: 0.4023154 Vali Loss: 0.4586911 Test Loss: 0.5432222
+Epoch 10 saved: ./checkpoints/3_3_128_10percent_electricity_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_10.pth
+EarlyStopping counter: 2 out of 3
+>>>>>>>testing : 3_3_128_10percent_electricity_512_720_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl720_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 1457661
+test shape: (11387, 128, 720, 1) (11387, 128, 720, 1)
+test shape: (1457536, 720, 1) (1457536, 720, 1)
+mse:0.23510328674316406, mae:0.31915333795547485

@@ -1,0 +1,110 @@
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS V3 (Split Decoder) Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>start training : 3_3_128_10percent_ETTh2_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 4347
+val 18823
+test 18823
+loading model for Stage 2 / Few-shot
+Loading from custom path: ./checkpoints/0-shot/PrismGTS.pth
+Loaded checkpoint successfully
+
+============================================================
+Freezing backbone for Stage 2...
+============================================================
+
+📊 Parameter Statistics by Module (Stage 2):
+------------------------------------------------------------
+Module                      Total  Trainable Status      
+------------------------------------------------------------
+revin_layer_x                   2          0 ❄️ Frozen   
+patch_embed                 8,320          0 ❄️ Frozen   
+semantic_moe              793,104    793,104 🔥 Train     
+trend_encoder             396,675          0 ❄️ Frozen   
+seasonal_encoder          396,675          0 ❄️ Frozen   
+trend_decoder             396,675          0 ❄️ Frozen   
+seasonal_decoder          396,675          0 ❄️ Frozen   
+trend_recon_head            8,256          0 ❄️ Frozen   
+seasonal_recon_head         8,256          0 ❄️ Frozen   
+cross_attention           132,608    132,608 🔥 Train     
+trend_heads             1,378,625  1,378,625 🔥 Train     
+seasonal_heads          1,378,625  1,378,625 🔥 Train     
+============================================================
+
+Model parameters:  3684244
+	iters: 0, epoch: 1 | loss: 1.1446955 | cost_time: 3 | memory: allocated 119MB, reserved 150MB, cached 150MB 
+Updating learning rate to 0.0
+Epoch: 1 cost time: 8.032591104507446
+Epoch: 1, Steps: 33 | Train Loss: 1.2786498 Vali Loss: 1.7265432 Test Loss: 4.2556262
+Epoch 1 saved: ./checkpoints/3_3_128_10percent_ETTh2_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_1.pth
+Validation loss decreased (inf --> 1.726543).  Saving model ...
+	iters: 0, epoch: 2 | loss: 1.4695956 | cost_time: 44 | memory: allocated 137MB, reserved 168MB, cached 168MB 
+Epoch: 2 cost time: 6.272865295410156
+Epoch: 2, Steps: 33 | Train Loss: 1.2783853 Vali Loss: 1.7261478 Test Loss: 4.2559319
+Epoch 2 saved: ./checkpoints/3_3_128_10percent_ETTh2_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_2.pth
+Validation loss decreased (1.726543 --> 1.726148).  Saving model ...
+	iters: 0, epoch: 3 | loss: 1.1653824 | cost_time: 39 | memory: allocated 137MB, reserved 168MB, cached 168MB 
+Epoch: 3 cost time: 6.453191757202148
+Epoch: 3, Steps: 33 | Train Loss: 1.2694937 Vali Loss: 1.7254562 Test Loss: 4.2566223
+Epoch 3 saved: ./checkpoints/3_3_128_10percent_ETTh2_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_3.pth
+Validation loss decreased (1.726148 --> 1.725456).  Saving model ...
+	iters: 0, epoch: 4 | loss: 1.4951689 | cost_time: 42 | memory: allocated 137MB, reserved 168MB, cached 168MB 
+Epoch: 4 cost time: 7.205337047576904
+Epoch: 4, Steps: 33 | Train Loss: 1.2651015 Vali Loss: 1.7244570 Test Loss: 4.2575641
+Epoch 4 saved: ./checkpoints/3_3_128_10percent_ETTh2_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_4.pth
+Validation loss decreased (1.725456 --> 1.724457).  Saving model ...
+	iters: 0, epoch: 5 | loss: 1.3011760 | cost_time: 41 | memory: allocated 137MB, reserved 168MB, cached 168MB 
+Epoch: 5 cost time: 6.66998028755188
+Epoch: 5, Steps: 33 | Train Loss: 1.2495383 Vali Loss: 1.7221551 Test Loss: 4.2586961
+Epoch 5 saved: ./checkpoints/3_3_128_10percent_ETTh2_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_5.pth
+Validation loss decreased (1.724457 --> 1.722155).  Saving model ...
+	iters: 0, epoch: 6 | loss: 1.1559435 | cost_time: 36 | memory: allocated 137MB, reserved 168MB, cached 168MB 
+Epoch: 6 cost time: 6.378071546554565
+Epoch: 6, Steps: 33 | Train Loss: 1.2531061 Vali Loss: 1.7211343 Test Loss: 4.2598391
+Epoch 6 saved: ./checkpoints/3_3_128_10percent_ETTh2_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_6.pth
+Validation loss decreased (1.722155 --> 1.721134).  Saving model ...
+	iters: 0, epoch: 7 | loss: 1.3113623 | cost_time: 41 | memory: allocated 137MB, reserved 168MB, cached 168MB 
+Epoch: 7 cost time: 6.739817380905151
+Epoch: 7, Steps: 33 | Train Loss: 1.2202254 Vali Loss: 1.7185299 Test Loss: 4.2611699
+Epoch 7 saved: ./checkpoints/3_3_128_10percent_ETTh2_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_7.pth
+Validation loss decreased (1.721134 --> 1.718530).  Saving model ...
+	iters: 0, epoch: 8 | loss: 1.1613151 | cost_time: 42 | memory: allocated 137MB, reserved 168MB, cached 168MB 
+Epoch: 8 cost time: 6.326810121536255
+Epoch: 8, Steps: 33 | Train Loss: 1.2030244 Vali Loss: 1.7147682 Test Loss: 4.2625337
+Epoch 8 saved: ./checkpoints/3_3_128_10percent_ETTh2_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_8.pth
+Validation loss decreased (1.718530 --> 1.714768).  Saving model ...
+	iters: 0, epoch: 9 | loss: 1.0419610 | cost_time: 38 | memory: allocated 137MB, reserved 166MB, cached 166MB 
+Epoch: 9 cost time: 6.363788366317749
+Epoch: 9, Steps: 33 | Train Loss: 1.1901508 Vali Loss: 1.7126911 Test Loss: 4.2632713
+Epoch 9 saved: ./checkpoints/3_3_128_10percent_ETTh2_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_9.pth
+Validation loss decreased (1.714768 --> 1.712691).  Saving model ...
+	iters: 0, epoch: 10 | loss: 1.1170555 | cost_time: 43 | memory: allocated 137MB, reserved 168MB, cached 168MB 
+Epoch: 10 cost time: 6.520456075668335
+Epoch: 10, Steps: 33 | Train Loss: 1.1796885 Vali Loss: 1.7084850 Test Loss: 4.2634602
+Epoch 10 saved: ./checkpoints/3_3_128_10percent_ETTh2_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_10.pth
+Validation loss decreased (1.712691 --> 1.708485).  Saving model ...
+>>>>>>>testing : 3_3_128_10percent_ETTh2_512_192_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl192_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 18823
+test shape: (147, 128, 192, 1) (147, 128, 192, 1)
+test shape: (18816, 192, 1) (18816, 192, 1)
+mse:0.34319642186164856, mae:0.3831435441970825

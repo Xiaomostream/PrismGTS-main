@@ -1,0 +1,92 @@
+Args in experiment:
+Use GPU: cuda:0
+
+===========================================================================
+PrismGTS V3 (Split Decoder) Parameter Statistics
+===========================================================================
+Module                     Params      Stage1       Stage2   
+---------------------------------------------------------------------------
+revin_layer_x                   2     🔥 Train     ❄️ Frozen  
+patch_embed                 8,320     🔥 Train     ❄️ Frozen  
+semantic_moe              793,104    ❄️ Frozen     🔥 Train   
+trend_encoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_encoder          396,675     🔥 Train     ❄️ Frozen  
+trend_decoder             396,675     🔥 Train     ❄️ Frozen  
+seasonal_decoder          396,675     🔥 Train     ❄️ Frozen  
+trend_recon_head            8,256     🔥 Train     ❄️ Frozen  
+seasonal_recon_head         8,256     🔥 Train     ❄️ Frozen  
+cross_attention           132,608     ⚫ Unused     🔥 Train   
+trend_heads             1,378,625     ⚫ Unused     🔥 Train   
+seasonal_heads          1,378,625     ⚫ Unused     🔥 Train   
+===========================================================================
+
+>>>>>>>start training : 3_3_128_10percent_ETTm1_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 21483
+val 78295
+test 78295
+loading model for Stage 2 / Few-shot
+Loading from custom path: ./checkpoints/0-shot/PrismGTS.pth
+Loaded checkpoint successfully
+
+============================================================
+Freezing backbone for Stage 2...
+============================================================
+
+📊 Parameter Statistics by Module (Stage 2):
+------------------------------------------------------------
+Module                      Total  Trainable Status      
+------------------------------------------------------------
+revin_layer_x                   2          0 ❄️ Frozen   
+patch_embed                 8,320          0 ❄️ Frozen   
+semantic_moe              793,104    793,104 🔥 Train     
+trend_encoder             396,675          0 ❄️ Frozen   
+seasonal_encoder          396,675          0 ❄️ Frozen   
+trend_decoder             396,675          0 ❄️ Frozen   
+seasonal_decoder          396,675          0 ❄️ Frozen   
+trend_recon_head            8,256          0 ❄️ Frozen   
+seasonal_recon_head         8,256          0 ❄️ Frozen   
+cross_attention           132,608    132,608 🔥 Train     
+trend_heads             1,378,625  1,378,625 🔥 Train     
+seasonal_heads          1,378,625  1,378,625 🔥 Train     
+============================================================
+
+Model parameters:  3684244
+	iters: 0, epoch: 1 | loss: 2.1077189 | cost_time: 3 | memory: allocated 120MB, reserved 150MB, cached 150MB 
+Updating learning rate to 0.0
+	iters: 100, epoch: 1 | loss: 2.3849368 | cost_time: 15 | memory: allocated 140MB, reserved 166MB, cached 166MB 
+Epoch: 1 cost time: 24.969470739364624
+Epoch: 1, Steps: 167 | Train Loss: 2.1770948 Vali Loss: 2.6834981 Test Loss: 1.9680973
+Epoch 1 saved: ./checkpoints/3_3_128_10percent_ETTm1_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_1.pth
+Validation loss decreased (inf --> 2.683498).  Saving model ...
+	iters: 0, epoch: 2 | loss: 2.0163155 | cost_time: 136 | memory: allocated 140MB, reserved 164MB, cached 164MB 
+	iters: 100, epoch: 2 | loss: 2.1022077 | cost_time: 15 | memory: allocated 140MB, reserved 164MB, cached 164MB 
+Epoch: 2 cost time: 25.152876138687134
+Epoch: 2, Steps: 167 | Train Loss: 2.0878577 Vali Loss: 2.6320884 Test Loss: 1.9155693
+Epoch 2 saved: ./checkpoints/3_3_128_10percent_ETTm1_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_2.pth
+Validation loss decreased (2.683498 --> 2.632088).  Saving model ...
+	iters: 0, epoch: 3 | loss: 2.1176028 | cost_time: 134 | memory: allocated 140MB, reserved 166MB, cached 166MB 
+	iters: 100, epoch: 3 | loss: 1.8609109 | cost_time: 14 | memory: allocated 140MB, reserved 164MB, cached 164MB 
+Updating learning rate to 5e-05
+Epoch: 3 cost time: 24.482452630996704
+Epoch: 3, Steps: 167 | Train Loss: 1.9283049 Vali Loss: 2.7483556 Test Loss: 1.9716693
+Epoch 3 saved: ./checkpoints/3_3_128_10percent_ETTm1_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_3.pth
+EarlyStopping counter: 1 out of 3
+	iters: 0, epoch: 4 | loss: 1.8938709 | cost_time: 135 | memory: allocated 140MB, reserved 164MB, cached 164MB 
+	iters: 100, epoch: 4 | loss: 1.7121722 | cost_time: 15 | memory: allocated 140MB, reserved 164MB, cached 164MB 
+Epoch: 4 cost time: 25.56004786491394
+Epoch: 4, Steps: 167 | Train Loss: 1.7043314 Vali Loss: 2.9473400 Test Loss: 2.0587547
+Epoch 4 saved: ./checkpoints/3_3_128_10percent_ETTm1_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_4.pth
+EarlyStopping counter: 2 out of 3
+	iters: 0, epoch: 5 | loss: 1.6783328 | cost_time: 136 | memory: allocated 140MB, reserved 164MB, cached 164MB 
+	iters: 100, epoch: 5 | loss: 1.4518445 | cost_time: 15 | memory: allocated 140MB, reserved 166MB, cached 166MB 
+Epoch: 5 cost time: 25.506447553634644
+Epoch: 5, Steps: 167 | Train Loss: 1.5618246 Vali Loss: 3.0891638 Test Loss: 2.1463137
+Epoch 5 saved: ./checkpoints/3_3_128_10percent_ETTm1_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0/stage2/checkpoint_epoch_5.pth
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : 3_3_128_10percent_ETTm1_512_336_long_term_forecast_PrismGTS_CI_ftM_sl512_ll48_pl336_pl64_dm128_nh2_el3_dl3_df128_fc1_ebtimeF_dtTrue_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Model parameters:  5558434
+test 78295
+test shape: (611, 128, 336, 1) (611, 128, 336, 1)
+test shape: (78208, 336, 1) (78208, 336, 1)
+mse:0.4521564543247223, mae:0.4423733651638031
