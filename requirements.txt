@@ -2,7 +2,7 @@ datasets==3.3.2
 gluonts==0.16.0
 numpy==1.26.4
 pandas==2.2.3
-# torch
+torch
 tqdm==4.67.1
 transformers==4.40.1
 accelerate==0.34.2
